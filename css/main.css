@@ -14,14 +14,40 @@ html {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
   transform: rotate(-15deg);
   position: relative;
+  left: 20%;
+  top: 7.4em;
+  transition: all .6s ease;
+}
+
+figure:first-child:hover {
+  z-index: 4;
+  transform: rotate(0deg);
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, .8);
 }
 
 figure:nth-child(2) {
-  transform: rotate(5deg);
+  z-index: 3;
+  transform: rotate(2deg);
+  left: 26.8%;
+  top: .1em;
+}
+
+figure:nth-child(2):hover {
+  z-index: 4;
+  transform: rotate(0deg);
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, .8);
 }
 
 figure:last-child {
-  transform: rotate(25deg);
+  transform: rotate(28deg);
+  left: 33.3%;
+  top: -13.5em;
+}
+
+figure:last-child:hover {
+  z-index: 4;
+  transform: rotate(0deg);
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, .8);
 }
 
 .polaroid > img {
